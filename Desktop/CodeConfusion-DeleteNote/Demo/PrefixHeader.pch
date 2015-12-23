@@ -1,0 +1,33 @@
+//
+//  Header.pch
+//  代码混淆
+//
+
+
+#ifdef __OBJC__
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import "codeObfuscation.h"
+
+#endif
+
+//
+//#ifdef DEBUG
+//
+////调试状态
+//#define DebugLog(...) NSLog((@"%s [Line %d] " format), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+//
+////发布状态
+//#else
+//
+//#define DebugLog(...)do { } while (0)
+//#endif
+
+
+#ifdef DEBUG
+#define NSLog(...) //NSLog((@"%s [Line %d] " format), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+#else
+#define DebugLog(...) do { } while (0)
+#endif
