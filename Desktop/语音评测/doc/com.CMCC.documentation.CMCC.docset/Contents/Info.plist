@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.CMCC.documentation.CMCC</string>
+	<key>CFBundleName</key>
+	<string>documentation.CMCC Documentation</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.119</string>
+	<key>CFBundleVersion</key>
+	<string>1.119</string>
+	
+	
+	
+	<key>DocSetFallbackURL</key>
+	<string>http://dev.10086.cn/cmcc/CMCC</string>
+	<key>DocSetFeedName</key>
+	<string>documentation.CMCC Documentation</string>
+	<key>DocSetFeedURL</key>
+	<string>http://dev.10086.cn/cmcc/CMCC/CMCC.atom</string>
+	<key>DocSetMinimumXcodeVersion</key>
+	<string>3.0</string>
+	<key>DocSetPlatformFamily</key>
+	<string>iOS</string>
+	<key>DashDocSetFamily</key>
+	<string>appledoc</string>
+	<key>DocSetPublisherIdentifier</key>
+	<string>com.CMCC.documentation</string>
+	<key>DocSetPublisherName</key>
+	<string>CMCC</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2015 CMCC. All rights reserved.</string>
+</dict>
+</plist>

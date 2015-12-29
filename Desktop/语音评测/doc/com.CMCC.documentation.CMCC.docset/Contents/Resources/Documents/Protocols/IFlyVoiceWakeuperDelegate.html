@@ -1,0 +1,591 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>IFlyVoiceWakeuperDelegate Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">documentation.CMCC </a></h1>
+				<a id="developerHome" href="../index.html">CMCC</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">IFlyVoiceWakeuperDelegate Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/onBeginOfSpeech">&nbsp;&nbsp;&nbsp;&nbsp;- onBeginOfSpeech</option>
+	
+	<option value="//api/name/onEndOfSpeech">&nbsp;&nbsp;&nbsp;&nbsp;- onEndOfSpeech</option>
+	
+	<option value="//api/name/onError:">&nbsp;&nbsp;&nbsp;&nbsp;- onError:</option>
+	
+	<option value="//api/name/onEvent:isLast:arg1:data:">&nbsp;&nbsp;&nbsp;&nbsp;- onEvent:isLast:arg1:data:</option>
+	
+	<option value="//api/name/onResult:">&nbsp;&nbsp;&nbsp;&nbsp;- onResult:</option>
+	
+	<option value="//api/name/onVolumeChanged:">&nbsp;&nbsp;&nbsp;&nbsp;- onVolumeChanged:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/onBeginOfSpeech">onBeginOfSpeech</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/onEndOfSpeech">onEndOfSpeech</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/onError:">onError:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/onEvent:isLast:arg1:data:">onEvent:isLast:arg1:data:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/onResult:">onResult:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/onVolumeChanged:">onVolumeChanged:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="IFlyVoiceWakeuperDelegate Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">IFlyVoiceWakeuperDelegate Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">IFlyVoiceWakeuperDelegate.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<ul>
+<li><p>代理返回时序描述</p>
+
+<p>onError 为唤醒会话错误反馈<br/>
+<a href="#//api/name/onBeginOfSpeech">onBeginOfSpeech</a> 表示录音开始<br/>
+onVolumeChanged 录音音量大小<br/>
+<a href="#//api/name/onEndOfSpeech">onEndOfSpeech</a> 录音结束，当服务终止时返回<a href="#//api/name/onEndOfSpeech">onEndOfSpeech</a><br/>
+onResult 服务结果反馈，内容定义如下</p></li>
+<li><p>唤醒服务</p>
+
+<p> 例：<br/>
+ focus_type = wake   唤醒会话<br/>
+ wakeup_result_id = 0    唤醒词位置<br/>
+ wakeup_result_Score = 60    唤醒词可信度</p></li>
+<li><p>注册服务</p>
+
+<p> 例：<br/>
+ focus_type = enroll 注册会话<br/>
+ enroll_success_num = 1  当前注册成功次数<br/>
+ current_enroll_status = success/failed  当前会话是否成功<br/>
+ wakeup_result_Score = 60    注册结果可信度<br/>
+ threshold = 10  当注册达到3次后，反馈对应资源的阀值</p></li>
+</ul>
+
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/onBeginOfSpeech">&ndash;&nbsp;onBeginOfSpeech</a></code>
+		<span class="tooltip"><p>录音开始</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/onEndOfSpeech">&ndash;&nbsp;onEndOfSpeech</a></code>
+		<span class="tooltip"><p>录音结束</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/onError:">&ndash;&nbsp;onError:</a></code>
+		<span class="tooltip"><p>会话错误</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/onResult:">&ndash;&nbsp;onResult:</a></code>
+		<span class="tooltip"><p>唤醒<br/>
+resultID:唤醒词位置</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/onVolumeChanged:">&ndash;&nbsp;onVolumeChanged:</a></code>
+		<span class="tooltip"><p>音量反馈，返回频率与录音数据返回回调频率一致<br/>
+volume:音量值</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/onEvent:isLast:arg1:data:">&ndash;&nbsp;onEvent:isLast:arg1:data:</a></code>
+		<span class="tooltip"><p>扩展事件回调</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/onBeginOfSpeech" title="onBeginOfSpeech"></a>
+	<h3 class="subsubtitle method-title">onBeginOfSpeech</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>录音开始</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)onBeginOfSpeech</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">IFlyVoiceWakeuperDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/onEndOfSpeech" title="onEndOfSpeech"></a>
+	<h3 class="subsubtitle method-title">onEndOfSpeech</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>录音结束</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)onEndOfSpeech</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">IFlyVoiceWakeuperDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/onError:" title="onError:"></a>
+	<h3 class="subsubtitle method-title">onError:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>会话错误</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)onError:(IFlySpeechError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorCode</em></dt>
+			<dd><p>错误描述类，</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">IFlyVoiceWakeuperDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/onEvent:isLast:arg1:data:" title="onEvent:isLast:arg1:data:"></a>
+	<h3 class="subsubtitle method-title">onEvent:isLast:arg1:data:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>扩展事件回调</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)onEvent:(int)<em>eventType</em> isLast:(BOOL)<em>isLast</em> arg1:(int)<em>arg1</em> data:(NSMutableDictionary *)<em>eventData</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>eventType</em></dt>
+			<dd><p>事件类型，具体参见IFlySpeechEvent枚举。</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>根据事件类型返回额外的数据</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">IFlyVoiceWakeuperDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/onResult:" title="onResult:"></a>
+	<h3 class="subsubtitle method-title">onResult:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>唤醒<br/>
+resultID:唤醒词位置</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)onResult:(NSMutableDictionary *)<em>resultArray</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">IFlyVoiceWakeuperDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/onVolumeChanged:" title="onVolumeChanged:"></a>
+	<h3 class="subsubtitle method-title">onVolumeChanged:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>音量反馈，返回频率与录音数据返回回调频率一致<br/>
+volume:音量值</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)onVolumeChanged:(int)<em>volume</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">IFlyVoiceWakeuperDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2015 CMCC. All rights reserved. (Last updated: 2015-07-24)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

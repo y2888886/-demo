@@ -1,0 +1,1 @@
+cp -R -f -a com.CMCC.documentation.CMCC.docset ~/Library/Developer/Shared/Documentation/DocSets/

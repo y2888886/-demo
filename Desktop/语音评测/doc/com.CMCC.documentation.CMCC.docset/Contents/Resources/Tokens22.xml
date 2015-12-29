@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/IFlySpeechplusDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/IFlySpeechplusDelegate</TokenIdentifier>
+			<Abstract type="html">语音+返回回调</Abstract>
+			<DeclaredIn>IFlySpeechUtility.h</DeclaredIn>
+			
+			<NodeRef refid="22"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

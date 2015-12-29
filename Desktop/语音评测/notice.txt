@@ -1,0 +1,28 @@
+
+集成需要注意：
+
+
+1. 启动识别前需要登录并且传入server_url等参数
+
+    //创建语音配置,appid必须要传入，仅执行一次则可
+    NSString *initString = [[NSString alloc] initWithFormat:@"appid=%@,timeout=%@,server_url=http://cmcc.lingxicloud.com/msp.do",APPID_VALUE,TIMEOUT_VALUE];
+    
+    //所有服务启动前，需要确保执行createUtility
+    [IFlySpeechUtility createUtility:initString];
+
+  具体代码请看MSCAppDelegate.m描述。
+
+2. 语音合成使用IFlySpeechSynthesizer类
+   IFlySpeechSynthesizerDelegate是回调接口。
+   合成demo区分本地和在线，使用本地请注意需要加载tts64res目录里的发音人。
+   具体的使用流程请参考：TTSViewController.m例程。
+
+
+3. 语音听写使用IFlySpeechRecognizer类：
+   IFlySpeechRecognizerDelegate是回调接口。
+   具体的使用流程请参考：
+	RecognizerFactory.m
+	ISRViewController.m
+   例程。
+
+
