@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/IFlyRecognizerViewDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/IFlyRecognizerViewDelegate</TokenIdentifier>
+			<Abstract type="html">识别回调委托
+  </Abstract>
+			<DeclaredIn>IFlyRecognizerViewDelegate.h</DeclaredIn>
+			
+			<NodeRef refid="15"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IFlyRecognizerViewDelegate/onResult:theResult:</TokenIdentifier>
+			<Abstract type="html">回调返回识别结果</Abstract>
+			<DeclaredIn>IFlyRecognizerViewDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)onResult:(IFlyRecognizerView *)iFlyRecognizerView theResult:(NSArray *)resultArray</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>iFlyRecognizerView</Name>
+					<Abstract type="html">IFlyRecognizerView对象</Abstract>
+				</Parameter><Parameter>
+					<Name>resultArray</Name>
+					<Abstract type="html">识别结果，NSArray的第一个元素为NSDictionary，NSDictionary的key为识别结果，value为置信度</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onResult:theResult:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IFlyRecognizerViewDelegate/onEnd:theError:</TokenIdentifier>
+			<Abstract type="html">识别结束回调</Abstract>
+			<DeclaredIn>IFlyRecognizerViewDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)onEnd:(IFlyRecognizerView *)iFlyRecognizerView theError:(IFlySpeechError *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>iFlyRecognizerView</Name>
+					<Abstract type="html">IFlyRecognizerView对象</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">识别结束错误码</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onEnd:theError:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+	</File>
+</Tokens>

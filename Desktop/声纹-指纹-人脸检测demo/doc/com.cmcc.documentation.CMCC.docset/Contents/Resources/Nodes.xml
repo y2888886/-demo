@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocSetNodes version="1.0">
+    <TOC>
+        <Node type="folder">
+            <Name>documentation.CMCC</Name>
+            <Path>index.html</Path>
+			<Subnodes>
+                
+				
+				<Node type="folder">
+					<Name>Classes</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="1"/>
+						<NodeRef refid="2"/>
+						<NodeRef refid="3"/>
+						<NodeRef refid="4"/>
+						<NodeRef refid="5"/>
+						<NodeRef refid="6"/>
+						<NodeRef refid="7"/>
+						<NodeRef refid="8"/>
+						<NodeRef refid="9"/>
+						<NodeRef refid="10"/>
+						<NodeRef refid="11"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+				
+				<Node type="folder">
+					<Name>Protocols</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="12"/>
+						<NodeRef refid="13"/>
+						<NodeRef refid="14"/>
+						<NodeRef refid="15"/>
+						<NodeRef refid="16"/>
+						<NodeRef refid="17"/>
+						
+					</Subnodes>
+				</Node>
+				
+			</Subnodes>
+        </Node>
+    </TOC>
+	<Library>
+		
+		<Node id="1">
+			<Name>IFlyContact</Name>
+			<Path>Classes/IFlyContact.html</Path>
+		</Node>
+		<Node id="2">
+			<Name>IFlyDataDownloader</Name>
+			<Path>Classes/IFlyDataDownloader.html</Path>
+		</Node>
+		<Node id="3">
+			<Name>IFlyDataUploader</Name>
+			<Path>Classes/IFlyDataUploader.html</Path>
+		</Node>
+		<Node id="4">
+			<Name>IFlyISVRecognizer</Name>
+			<Path>Classes/IFlyISVRecognizer.html</Path>
+		</Node>
+		<Node id="5">
+			<Name>IFlyRecognizerView</Name>
+			<Path>Classes/IFlyRecognizerView.html</Path>
+		</Node>
+		<Node id="6">
+			<Name>IFlySetting</Name>
+			<Path>Classes/IFlySetting.html</Path>
+		</Node>
+		<Node id="7">
+			<Name>IFlySpeechError</Name>
+			<Path>Classes/IFlySpeechError.html</Path>
+		</Node>
+		<Node id="8">
+			<Name>IFlySpeechRecognizer</Name>
+			<Path>Classes/IFlySpeechRecognizer.html</Path>
+		</Node>
+		<Node id="9">
+			<Name>IFlySpeechSynthesizer</Name>
+			<Path>Classes/IFlySpeechSynthesizer.html</Path>
+		</Node>
+		<Node id="10">
+			<Name>IFlySpeechUtility</Name>
+			<Path>Classes/IFlySpeechUtility.html</Path>
+		</Node>
+		<Node id="11">
+			<Name>IFlyUserWords</Name>
+			<Path>Classes/IFlyUserWords.html</Path>
+		</Node>
+		
+		
+		<Node id="12">
+			<Name>IFlyDataDownloaderDelegate</Name>
+			<Path>Protocols/IFlyDataDownloaderDelegate.html</Path>
+		</Node>
+		<Node id="13">
+			<Name>IFlyDataUploaderDelegate</Name>
+			<Path>Protocols/IFlyDataUploaderDelegate.html</Path>
+		</Node>
+		<Node id="14">
+			<Name>IFlyISVDelegate</Name>
+			<Path>Protocols/IFlyISVDelegate.html</Path>
+		</Node>
+		<Node id="15">
+			<Name>IFlyRecognizerViewDelegate</Name>
+			<Path>Protocols/IFlyRecognizerViewDelegate.html</Path>
+		</Node>
+		<Node id="16">
+			<Name>IFlySpeechRecognizerDelegate</Name>
+			<Path>Protocols/IFlySpeechRecognizerDelegate.html</Path>
+		</Node>
+		<Node id="17">
+			<Name>IFlySpeechSynthesizerDelegate</Name>
+			<Path>Protocols/IFlySpeechSynthesizerDelegate.html</Path>
+		</Node>
+		
+	</Library>
+</DocSetNodes>

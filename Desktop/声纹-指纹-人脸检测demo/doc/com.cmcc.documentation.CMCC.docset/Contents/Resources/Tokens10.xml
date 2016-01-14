@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/IFlySpeechUtility.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/IFlySpeechUtility</TokenIdentifier>
+			<Abstract type="html">用户配置</Abstract>
+			<DeclaredIn>IFlySpeechUtility.h</DeclaredIn>
+			
+			<NodeRef refid="10"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/IFlySpeechUtility/createUtility:</TokenIdentifier>
+			<Abstract type="html">创建用户语音配置。</Abstract>
+			<DeclaredIn>IFlySpeechUtility.h</DeclaredIn>			
+			
+			<Declaration>+ (IFlySpeechUtility *)createUtility:(NSString *)params</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>params</Name>
+					<Abstract type="html">启动参数，必须保证appid参数传入，示例：appid=123456</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">语音配置</Abstract></ReturnValue>
+			<Anchor>//api/name/createUtility:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/IFlySpeechUtility/destroy</TokenIdentifier>
+			<Abstract type="html">销毁用户配置对象</Abstract>
+			<DeclaredIn>IFlySpeechUtility.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)destroy</Declaration>
+			
+			
+			<Anchor>//api/name/destroy</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/IFlySpeechUtility/getUtility</TokenIdentifier>
+			<Abstract type="html">获取用户配置对象</Abstract>
+			<DeclaredIn>IFlySpeechUtility.h</DeclaredIn>			
+			
+			<Declaration>+ (IFlySpeechUtility *)getUtility</Declaration>
+			
+			
+			<Anchor>//api/name/getUtility</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/IFlySpeechUtility/setParameter:forKey:</TokenIdentifier>
+			<Abstract type="html">设置MSC引擎的状态参数</Abstract>
+			<DeclaredIn>IFlySpeechUtility.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)setParameter:(NSString *)value forKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/setParameter:forKey:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/IFlySpeechRecognizer.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/IFlySpeechRecognizer</TokenIdentifier>
+			<Abstract type="html">语音识别类</Abstract>
+			<DeclaredIn>IFlySpeechRecognizer.h</DeclaredIn>
+			
+			<NodeRef refid="8"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/IFlySpeechRecognizer/setDelegate:</TokenIdentifier>
+			<Abstract type="html">设置委托对象</Abstract>
+			<DeclaredIn>IFlySpeechRecognizer.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) id&lt;IFlySpeechRecognizerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/IFlySpeechRecognizer/delegate</TokenIdentifier>
+			<Abstract type="html">设置委托对象</Abstract>
+			<DeclaredIn>IFlySpeechRecognizer.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) id&lt;IFlySpeechRecognizerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/IFlySpeechRecognizer/delegate</TokenIdentifier>
+			<Abstract type="html">设置委托对象</Abstract>
+			<DeclaredIn>IFlySpeechRecognizer.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) id&lt;IFlySpeechRecognizerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/IFlySpeechRecognizer/createRecognizer:delegate:</TokenIdentifier>
+			<Abstract type="html">创建识别对象的单类</Abstract>
+			<DeclaredIn>IFlySpeechRecognizer.h</DeclaredIn>			
+			
+			<Declaration>+ (id)createRecognizer:(NSString *)params delegate:(id&lt;IFlySpeechRecognizerDelegate&gt;)delegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>params</Name>
+					<Abstract type="html">初始化时的参数</Abstract>
+				</Parameter><Parameter>
+					<Name>delegate</Name>
+					<Abstract type="html">委托对象</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/createRecognizer:delegate:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/IFlySpeechRecognizer/getRecognizer</TokenIdentifier>
+			<Abstract type="html">获取识别对象</Abstract>
+			<DeclaredIn>IFlySpeechRecognizer.h</DeclaredIn>			
+			
+			<Declaration>+ (IFlySpeechRecognizer *)getRecognizer</Declaration>
+			
+			<ReturnValue><Abstract type="html">返回创建的识别对象</Abstract></ReturnValue>
+			<Anchor>//api/name/getRecognizer</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/IFlySpeechRecognizer/setParameter:value:</TokenIdentifier>
+			<Abstract type="html">设置识别引擎的参数</Abstract>
+			<DeclaredIn>IFlySpeechRecognizer.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)setParameter:(NSString *)key value:(NSString *)value</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">识别引擎参数</Abstract>
+				</Parameter><Parameter>
+					<Name>value</Name>
+					<Abstract type="html">参数对应的取值</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">设置的参数和取值正确返回YES，失败返回NO</Abstract></ReturnValue>
+			<Anchor>//api/name/setParameter:value:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/IFlySpeechRecognizer/startListening</TokenIdentifier>
+			<Abstract type="html">开始识别</Abstract>
+			<DeclaredIn>IFlySpeechRecognizer.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)startListening</Declaration>
+			
+			
+			<Anchor>//api/name/startListening</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/IFlySpeechRecognizer/stopListening</TokenIdentifier>
+			<Abstract type="html">停止录音</Abstract>
+			<DeclaredIn>IFlySpeechRecognizer.h</DeclaredIn>			
+			
+			<Declaration>- (void)stopListening</Declaration>
+			
+			
+			<Anchor>//api/name/stopListening</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/IFlySpeechRecognizer/cancel</TokenIdentifier>
+			<Abstract type="html">取消本次会话</Abstract>
+			<DeclaredIn>IFlySpeechRecognizer.h</DeclaredIn>			
+			
+			<Declaration>- (void)cancel</Declaration>
+			
+			
+			<Anchor>//api/name/cancel</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/IFlySpeechRecognizer/recognizeStream</TokenIdentifier>
+			<Abstract type="html">音频流识别</Abstract>
+			<DeclaredIn>IFlySpeechRecognizer.h</DeclaredIn>			
+			
+			<Declaration>- (void)recognizeStream</Declaration>
+			
+			
+			<Anchor>//api/name/recognizeStream</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/IFlySpeechRecognizer/writeAudio:length:</TokenIdentifier>
+			<Abstract type="html">写入音频流</Abstract>
+			<DeclaredIn>IFlySpeechRecognizer.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)writeAudio:(NSData *)audioData length:(int)length</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>audioData</Name>
+					<Abstract type="html">音频数据</Abstract>
+				</Parameter><Parameter>
+					<Name>length</Name>
+					<Abstract type="html">长度</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">写入成功返回YES，写入失败返回NO</Abstract></ReturnValue>
+			<Anchor>//api/name/writeAudio:length:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/IFlySpeechRecognizer/recognizeAudio:</TokenIdentifier>
+			<Abstract type="html">音频文件识别</Abstract>
+			<DeclaredIn>IFlySpeechRecognizer.h</DeclaredIn>			
+			
+			<Declaration>- (void)recognizeAudio:(NSData *)audioData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>audioData</Name>
+					<Abstract type="html">音频数据</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/recognizeAudio:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+	</File>
+</Tokens>

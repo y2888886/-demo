@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/IFlyISVRecognizer.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/IFlyISVRecognizer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>IFlyISVRecognizer.h</DeclaredIn>
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/IFlyISVRecognizer/sharedInstance</TokenIdentifier>
+			<Abstract type="html">* FlyISVRecognizer is a kind of Singleton calss
+* the function can be used as below:
+   IFLyISVRecognizer *recognizer=[IFlyISVRecognizer creteRecognizer: self];</Abstract>
+			<DeclaredIn>IFlyISVRecognizer.h</DeclaredIn>			
+			
+			<Declaration>+ (IFlyISVRecognizer *)sharedInstance</Declaration>
+			
+			
+			<Anchor>//api/name/sharedInstance</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/IFlyISVRecognizer/generatePassword:</TokenIdentifier>
+			<Abstract type="html">* genrerate a serial number password
+* princeple:
+   1.number serial has no 1 in itself;
+   2.the nuber serial has no same number(&quot;98765432&quot;is right while &quot;99876543&quot; is wrong)
+* @length: the serial number&apos;s length,length of &quot;98765432&quot; is 8,
+   generally length is 8 and other value is forbidden</Abstract>
+			<DeclaredIn>IFlyISVRecognizer.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)generatePassword:(int)length</Declaration>
+			
+			
+			<Anchor>//api/name/generatePassword:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/IFlyISVRecognizer/getPasswordList:</TokenIdentifier>
+			<Abstract type="html">* Used to get password from server
+* @pwdt:
+   when pwdt is 1,the function will return chinese text;
+   while pwdt is 2, the funciton will return number serial</Abstract>
+			<DeclaredIn>IFlyISVRecognizer.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)getPasswordList:(int)pwdt</Declaration>
+			
+			
+			<Anchor>//api/name/getPasswordList:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/IFlyISVRecognizer/isListening</TokenIdentifier>
+			<Abstract type="html">* Used to judge if the engine is running in listenning
+* return value:
+   YES: the engine is listenning;
+   No : the engine is not listenning</Abstract>
+			<DeclaredIn>IFlyISVRecognizer.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isListening</Declaration>
+			
+			
+			<Anchor>//api/name/isListening</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/IFlyISVRecognizer/sendRequest:authid:pwdt:ptxt:vid:err:</TokenIdentifier>
+			<Abstract type="html">* Used to query or delete the voiceprint model in server
+* @cmd:
+    &quot;del&quot;: delete model
+    &quot;que&quot;: query model
+* @authid: user id ,can be @&quot;tianxia&quot; or other;
+* @pwdt: voiceprint type
+    1: fixed txt voiceprint code ,like @&quot;我的地盘我做主&quot;   
+    2: free voiceprint code , user can speek anything,but 5 times 
+       trainning the speech shall be same
+    3: number serial voiceprint code ,like @&quot;98765432&quot; and so on
+* @ptxt: voiceprint txt,only fixed voiceprint and number serial have this,
+    in free voiceprint model this param shall be set nil
+* @vid: another voiceprint type model,user can use this to query or delete
+    model in server can be @&quot;jakillasdfasdjjjlajlsdfhdfdsadff&quot;,totally 32 bits;
+* NOTES:
+   when vid is not nil,then the server will judge the vid first
+   while the vid is nil, server can still query or delete the voiceprint model 
+   by other params</Abstract>
+			<DeclaredIn>IFlyISVRecognizer.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)sendRequest:(NSString *)cmd authid:(NSString *)auth_id pwdt:(int)pwdt ptxt:(NSString *)ptxt vid:(NSString *)vid err:(int *)err</Declaration>
+			
+			
+			<Anchor>//api/name/sendRequest:authid:pwdt:ptxt:vid:err:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/IFlyISVRecognizer/setParameter:forKey:</TokenIdentifier>
+			<Abstract type="html">set the voiceprint params
+@&quot;sst&quot;            : @&quot;train&quot; or @&quot;verify&quot;
+@&quot;auth_id&quot;        : @&quot;tianxia&quot; or ther
+@&quot;sub&quot;            : @&quot;ivp&quot;
+@&quot;ptxt&quot;           :
+@&quot;rgn&quot;            : @&quot;5&quot;
+@&quot;pwdt&quot;           : @&quot;1&quot;,or @&quot;2&quot;, or @&quot;3&quot;
+@&quot;auf&quot;            : @&quot;audio/L16;rate=16000&quot; or @&quot;audio/L16;rate=8000&quot;
+@&quot;vad_enable      : @&quot;1&quot; or @&quot;0&quot;
+@&quot;vad_timeout&quot;    : @&quot;3000&quot;
+@&quot;vadspeechtail&quot;: @&quot;100&quot;</Abstract>
+			<DeclaredIn>IFlyISVRecognizer.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)setParameter:(NSString *)value forKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/setParameter:forKey:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/IFlyISVRecognizer/getParameter:</TokenIdentifier>
+			<Abstract type="html">get the voiceprint params
+used the same as function of setParameter</Abstract>
+			<DeclaredIn>IFlyISVRecognizer.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)getParameter:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/getParameter:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/IFlyISVRecognizer/startListening</TokenIdentifier>
+			<Abstract type="html">start recording</Abstract>
+			<DeclaredIn>IFlyISVRecognizer.h</DeclaredIn>			
+			
+			<Declaration>- (void)startListening</Declaration>
+			
+			
+			<Anchor>//api/name/startListening</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/IFlyISVRecognizer/stopListening</TokenIdentifier>
+			<Abstract type="html">stop recording</Abstract>
+			<DeclaredIn>IFlyISVRecognizer.h</DeclaredIn>			
+			
+			<Declaration>- (void)stopListening</Declaration>
+			
+			
+			<Anchor>//api/name/stopListening</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/IFlyISVRecognizer/cancel</TokenIdentifier>
+			<Abstract type="html">cancel recording,like function stopListening</Abstract>
+			<DeclaredIn>IFlyISVRecognizer.h</DeclaredIn>			
+			
+			<Declaration>- (void)cancel</Declaration>
+			
+			
+			<Anchor>//api/name/cancel</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+	</File>
+</Tokens>
