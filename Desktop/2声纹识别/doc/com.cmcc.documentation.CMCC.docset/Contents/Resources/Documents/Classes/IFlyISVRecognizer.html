@@ -1,0 +1,840 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>IFlyISVRecognizer Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">documentation.CMCC </a></h1>
+				<a id="developerHome" href="../index.html">cmcc</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">IFlyISVRecognizer Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/sharedInstance">&nbsp;&nbsp;&nbsp;&nbsp;+ sharedInstance</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/cancel">&nbsp;&nbsp;&nbsp;&nbsp;- cancel</option>
+	
+	<option value="//api/name/generatePassword:">&nbsp;&nbsp;&nbsp;&nbsp;- generatePassword:</option>
+	
+	<option value="//api/name/getParameter:">&nbsp;&nbsp;&nbsp;&nbsp;- getParameter:</option>
+	
+	<option value="//api/name/getPasswordList:">&nbsp;&nbsp;&nbsp;&nbsp;- getPasswordList:</option>
+	
+	<option value="//api/name/isListening">&nbsp;&nbsp;&nbsp;&nbsp;- isListening</option>
+	
+	<option value="//api/name/sendRequest:authid:pwdt:ptxt:vid:err:">&nbsp;&nbsp;&nbsp;&nbsp;- sendRequest:authid:pwdt:ptxt:vid:err:</option>
+	
+	<option value="//api/name/setParameter:forKey:">&nbsp;&nbsp;&nbsp;&nbsp;- setParameter:forKey:</option>
+	
+	<option value="//api/name/startListening">&nbsp;&nbsp;&nbsp;&nbsp;- startListening</option>
+	
+	<option value="//api/name/stopListening">&nbsp;&nbsp;&nbsp;&nbsp;- stopListening</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sharedInstance">sharedInstance</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cancel">cancel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/generatePassword:">generatePassword:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getParameter:">getParameter:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getPasswordList:">getPasswordList:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isListening">isListening</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sendRequest:authid:pwdt:ptxt:vid:err:">sendRequest:authid:pwdt:ptxt:vid:err:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setParameter:forKey:">setParameter:forKey:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startListening">startListening</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopListening">stopListening</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="IFlyISVRecognizer Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">IFlyISVRecognizer Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">IFlyISVRecognizer.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sharedInstance">+&nbsp;sharedInstance</a></code>
+		<span class="tooltip"><ul>
+<li>FlyISVRecognizer is a kind of Singleton calss</li>
+<li>the function can be used as below:<br/>
+ IFLyISVRecognizer *recognizer=[IFlyISVRecognizer creteRecognizer: self];</li>
+</ul>
+</span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/generatePassword:">&ndash;&nbsp;generatePassword:</a></code>
+		<span class="tooltip"><ul>
+<li>genrerate a serial number password</li>
+<li>princeple:<br/>
+ 1.number serial has no 1 in itself;<br/>
+ 2.the nuber serial has no same number(&ldquo;98765432"is right while "99876543&rdquo; is wrong)</li>
+<li>@length: the serial number&rsquo;s length,length of &ldquo;98765432&rdquo; is 8,<br/>
+ generally length is 8 and other value is forbidden</li>
+</ul>
+</span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getPasswordList:">&ndash;&nbsp;getPasswordList:</a></code>
+		<span class="tooltip"><ul>
+<li>Used to get password from server</li>
+<li>@pwdt:<br/>
+ when pwdt is 1,the function will return chinese text;<br/>
+ while pwdt is 2, the funciton will return number serial</li>
+</ul>
+</span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isListening">&ndash;&nbsp;isListening</a></code>
+		<span class="tooltip"><ul>
+<li>Used to judge if the engine is running in listenning</li>
+<li>return value:<br/>
+ YES: the engine is listenning;<br/>
+ No : the engine is not listenning</li>
+</ul>
+</span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sendRequest:authid:pwdt:ptxt:vid:err:">&ndash;&nbsp;sendRequest:authid:pwdt:ptxt:vid:err:</a></code>
+		<span class="tooltip"><ul>
+<li>Used to query or delete the voiceprint model in server</li>
+<li>@cmd:<br/>
+  &ldquo;del&rdquo;: delete model<br/>
+  &ldquo;que&rdquo;: query model</li>
+<li>@authid: user id ,can be @&ldquo;tianxia&rdquo; or other;</li>
+<li>@pwdt: voiceprint type<br/>
+  1: fixed txt voiceprint code ,like @&ldquo;我的地盘我做主&rdquo;   <br/>
+  2: free voiceprint code , user can speek anything,but 5 times <br/>
+     trainning the speech shall be same<br/>
+  3: number serial voiceprint code ,like @&ldquo;98765432&rdquo; and so on</li>
+<li>@ptxt: voiceprint txt,only fixed voiceprint and number serial have this,<br/>
+  in free voiceprint model this param shall be set nil</li>
+<li>@vid: another voiceprint type model,user can use this to query or delete<br/>
+  model in server can be @&ldquo;jakillasdfasdjjjlajlsdfhdfdsadff&rdquo;,totally 32 bits;</li>
+<li>NOTES:<br/>
+ when vid is not nil,then the server will judge the vid first<br/>
+ while the vid is nil, server can still query or delete the voiceprint model <br/>
+ by other params</li>
+</ul>
+</span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setParameter:forKey:">&ndash;&nbsp;setParameter:forKey:</a></code>
+		<span class="tooltip"><p>set the voiceprint params<br/>
+@&ldquo;sst&rdquo;            : @&ldquo;train&rdquo; or @&ldquo;verify"<br/>
+@"auth_id&rdquo;        : @&ldquo;tianxia&rdquo; or ther<br/>
+@&ldquo;sub&rdquo;            : @&ldquo;ivp"<br/>
+@"ptxt&rdquo;           :<br/>
+@&ldquo;rgn&rdquo;            : @&ldquo;5"<br/>
+@"pwdt&rdquo;           : @&ldquo;1&rdquo;,or @&ldquo;2&rdquo;, or @&ldquo;3"<br/>
+@"auf&rdquo;            : @&ldquo;audio/L16;rate=16000&rdquo; or @&ldquo;audio/L16;rate=8000"<br/>
+@"vad_enable      : @"1&rdquo; or @&ldquo;0"<br/>
+@"vad_timeout&rdquo;    : @&ldquo;3000"<br/>
+@"vad_speech_tail&rdquo;: @&ldquo;100&rdquo;</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getParameter:">&ndash;&nbsp;getParameter:</a></code>
+		<span class="tooltip"><p>get the voiceprint params<br/>
+used the same as function of setParameter</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/startListening">&ndash;&nbsp;startListening</a></code>
+		<span class="tooltip"><p>start recording</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stopListening">&ndash;&nbsp;stopListening</a></code>
+		<span class="tooltip"><p>stop recording</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cancel">&ndash;&nbsp;cancel</a></code>
+		<span class="tooltip"><p>cancel recording,like function <a href="#//api/name/stopListening">stopListening</a></p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/sharedInstance" title="sharedInstance"></a>
+	<h3 class="subsubtitle method-title">sharedInstance</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<ul>
+<li>FlyISVRecognizer is a kind of Singleton calss</li>
+<li>the function can be used as below:<br/>
+ IFLyISVRecognizer *recognizer=[IFlyISVRecognizer creteRecognizer: self];</li>
+</ul>
+
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (IFlyISVRecognizer *)sharedInstance</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">IFlyISVRecognizer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/cancel" title="cancel"></a>
+	<h3 class="subsubtitle method-title">cancel</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>cancel recording,like function <a href="#//api/name/stopListening">stopListening</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)cancel</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">IFlyISVRecognizer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/generatePassword:" title="generatePassword:"></a>
+	<h3 class="subsubtitle method-title">generatePassword:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<ul>
+<li>genrerate a serial number password</li>
+<li>princeple:<br/>
+ 1.number serial has no 1 in itself;<br/>
+ 2.the nuber serial has no same number(&ldquo;98765432"is right while "99876543&rdquo; is wrong)</li>
+<li>@length: the serial number&rsquo;s length,length of &ldquo;98765432&rdquo; is 8,<br/>
+ generally length is 8 and other value is forbidden</li>
+</ul>
+
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)generatePassword:(int)<em>length</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">IFlyISVRecognizer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getParameter:" title="getParameter:"></a>
+	<h3 class="subsubtitle method-title">getParameter:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>get the voiceprint params<br/>
+used the same as function of setParameter</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)getParameter:(NSString *)<em>key</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">IFlyISVRecognizer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getPasswordList:" title="getPasswordList:"></a>
+	<h3 class="subsubtitle method-title">getPasswordList:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<ul>
+<li>Used to get password from server</li>
+<li>@pwdt:<br/>
+ when pwdt is 1,the function will return chinese text;<br/>
+ while pwdt is 2, the funciton will return number serial</li>
+</ul>
+
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)getPasswordList:(int)<em>pwdt</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">IFlyISVRecognizer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isListening" title="isListening"></a>
+	<h3 class="subsubtitle method-title">isListening</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<ul>
+<li>Used to judge if the engine is running in listenning</li>
+<li>return value:<br/>
+ YES: the engine is listenning;<br/>
+ No : the engine is not listenning</li>
+</ul>
+
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isListening</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">IFlyISVRecognizer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sendRequest:authid:pwdt:ptxt:vid:err:" title="sendRequest:authid:pwdt:ptxt:vid:err:"></a>
+	<h3 class="subsubtitle method-title">sendRequest:authid:pwdt:ptxt:vid:err:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<ul>
+<li>Used to query or delete the voiceprint model in server</li>
+<li>@cmd:<br/>
+  &ldquo;del&rdquo;: delete model<br/>
+  &ldquo;que&rdquo;: query model</li>
+<li>@authid: user id ,can be @&ldquo;tianxia&rdquo; or other;</li>
+<li>@pwdt: voiceprint type<br/>
+  1: fixed txt voiceprint code ,like @&ldquo;我的地盘我做主&rdquo;   <br/>
+  2: free voiceprint code , user can speek anything,but 5 times <br/>
+     trainning the speech shall be same<br/>
+  3: number serial voiceprint code ,like @&ldquo;98765432&rdquo; and so on</li>
+<li>@ptxt: voiceprint txt,only fixed voiceprint and number serial have this,<br/>
+  in free voiceprint model this param shall be set nil</li>
+<li>@vid: another voiceprint type model,user can use this to query or delete<br/>
+  model in server can be @&ldquo;jakillasdfasdjjjlajlsdfhdfdsadff&rdquo;,totally 32 bits;</li>
+<li>NOTES:<br/>
+ when vid is not nil,then the server will judge the vid first<br/>
+ while the vid is nil, server can still query or delete the voiceprint model <br/>
+ by other params</li>
+</ul>
+
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)sendRequest:(NSString *)<em>cmd</em> authid:(NSString *)<em>auth_id</em> pwdt:(int)<em>pwdt</em> ptxt:(NSString *)<em>ptxt</em> vid:(NSString *)<em>vid</em> err:(int *)<em>err</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">IFlyISVRecognizer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setParameter:forKey:" title="setParameter:forKey:"></a>
+	<h3 class="subsubtitle method-title">setParameter:forKey:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>set the voiceprint params<br/>
+@&ldquo;sst&rdquo;            : @&ldquo;train&rdquo; or @&ldquo;verify"<br/>
+@"auth_id&rdquo;        : @&ldquo;tianxia&rdquo; or ther<br/>
+@&ldquo;sub&rdquo;            : @&ldquo;ivp"<br/>
+@"ptxt&rdquo;           :<br/>
+@&ldquo;rgn&rdquo;            : @&ldquo;5"<br/>
+@"pwdt&rdquo;           : @&ldquo;1&rdquo;,or @&ldquo;2&rdquo;, or @&ldquo;3"<br/>
+@"auf&rdquo;            : @&ldquo;audio/L16;rate=16000&rdquo; or @&ldquo;audio/L16;rate=8000"<br/>
+@"vad_enable      : @"1&rdquo; or @&ldquo;0"<br/>
+@"vad_timeout&rdquo;    : @&ldquo;3000"<br/>
+@"vad_speech_tail&rdquo;: @&ldquo;100&rdquo;</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)setParameter:(NSString *)<em>value</em> forKey:(NSString *)<em>key</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">IFlyISVRecognizer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/startListening" title="startListening"></a>
+	<h3 class="subsubtitle method-title">startListening</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>start recording</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)startListening</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">IFlyISVRecognizer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stopListening" title="stopListening"></a>
+	<h3 class="subsubtitle method-title">stopListening</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>stop recording</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)stopListening</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">IFlyISVRecognizer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2015 cmcc. All rights reserved. (Last updated: 2015-06-25)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

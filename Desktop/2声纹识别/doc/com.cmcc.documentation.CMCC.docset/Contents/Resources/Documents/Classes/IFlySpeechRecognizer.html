@@ -1,0 +1,929 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>IFlySpeechRecognizer Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">documentation.CMCC </a></h1>
+				<a id="developerHome" href="../index.html">cmcc</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">IFlySpeechRecognizer Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/delegate">&nbsp;&nbsp;&nbsp;&nbsp;delegate</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/createRecognizer:delegate:">&nbsp;&nbsp;&nbsp;&nbsp;+ createRecognizer:delegate:</option>
+	
+	<option value="//api/name/getRecognizer">&nbsp;&nbsp;&nbsp;&nbsp;+ getRecognizer</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/cancel">&nbsp;&nbsp;&nbsp;&nbsp;- cancel</option>
+	
+	<option value="//api/name/recognizeAudio:">&nbsp;&nbsp;&nbsp;&nbsp;- recognizeAudio:</option>
+	
+	<option value="//api/name/recognizeStream">&nbsp;&nbsp;&nbsp;&nbsp;- recognizeStream</option>
+	
+	<option value="//api/name/setParameter:value:">&nbsp;&nbsp;&nbsp;&nbsp;- setParameter:value:</option>
+	
+	<option value="//api/name/startListening">&nbsp;&nbsp;&nbsp;&nbsp;- startListening</option>
+	
+	<option value="//api/name/stopListening">&nbsp;&nbsp;&nbsp;&nbsp;- stopListening</option>
+	
+	<option value="//api/name/writeAudio:length:">&nbsp;&nbsp;&nbsp;&nbsp;- writeAudio:length:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_创建对象">创建对象</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_操作">操作</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_IFlyStreamRecognizer Methods">IFlyStreamRecognizer Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_IFlyPcmRecognizer Methods">IFlyPcmRecognizer Methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delegate">delegate</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createRecognizer:delegate:">createRecognizer:delegate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getRecognizer">getRecognizer</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cancel">cancel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/recognizeAudio:">recognizeAudio:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/recognizeStream">recognizeStream</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setParameter:value:">setParameter:value:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startListening">startListening</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopListening">stopListening</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeAudio:length:">writeAudio:length:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="IFlySpeechRecognizer Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">IFlySpeechRecognizer Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value"><a href="../Protocols/IFlySpeechRecognizerDelegate.html">IFlySpeechRecognizerDelegate</a></td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">IFlySpeechRecognizer.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>语音识别类</p>
+
+<p>此类现在设计为单类，你在使用中只需要创建此对象，不能调用release/dealloc函数去释放此对象。所有关于语音识别的操作都在此类中。</p>
+
+<p>音频流识别</p>
+
+<p>音频流和音频文件相似，不同的是音频流识别可以将文件分段写入不需要一次写入</p>
+
+<p>音频文件识别</p>
+
+<p>音频文件识别不需要录音，只需要一次将音频文件传入就可以。</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+		<span class="tooltip"><p>设置委托对象</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="创建对象" name="task_创建对象"></a>
+						<h3 class="subsubtitle task-title">创建对象</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createRecognizer:delegate:">+&nbsp;createRecognizer:delegate:</a></code>
+		<span class="tooltip"><p>创建识别对象的单类</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getRecognizer">+&nbsp;getRecognizer</a></code>
+		<span class="tooltip"><p>获取识别对象</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="操作" name="task_操作"></a>
+						<h3 class="subsubtitle task-title">操作</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setParameter:value:">&ndash;&nbsp;setParameter:value:</a></code>
+		<span class="tooltip"><p>设置识别引擎的参数</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/startListening">&ndash;&nbsp;startListening</a></code>
+		<span class="tooltip"><p>开始识别</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stopListening">&ndash;&nbsp;stopListening</a></code>
+		<span class="tooltip"><p>停止录音</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cancel">&ndash;&nbsp;cancel</a></code>
+		<span class="tooltip"><p>取消本次会话</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="IFlyStreamRecognizer Methods" name="task_IFlyStreamRecognizer Methods"></a>
+						<h3 class="subsubtitle task-title">IFlyStreamRecognizer Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/recognizeStream">&ndash;&nbsp;recognizeStream</a></code>
+		<span class="tooltip"><p>音频流识别</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/writeAudio:length:">&ndash;&nbsp;writeAudio:length:</a></code>
+		<span class="tooltip"><p>写入音频流</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="IFlyPcmRecognizer Methods" name="task_IFlyPcmRecognizer Methods"></a>
+						<h3 class="subsubtitle task-title">IFlyPcmRecognizer Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/recognizeAudio:">&ndash;&nbsp;recognizeAudio:</a></code>
+		<span class="tooltip"><p>音频文件识别</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="subsubtitle method-title">delegate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>设置委托对象</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (assign) id&lt;IFlySpeechRecognizerDelegate&gt; delegate</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">IFlySpeechRecognizer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/createRecognizer:delegate:" title="createRecognizer:delegate:"></a>
+	<h3 class="subsubtitle method-title">createRecognizer:delegate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>创建识别对象的单类</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)createRecognizer:(NSString *)<em>params</em> delegate:(id&lt;IFlySpeechRecognizerDelegate&gt;)<em>delegate</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>params</em></dt>
+			<dd><p>初始化时的参数</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>delegate</em></dt>
+			<dd><p>委托对象</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>此方法的使用示例如下:</p>
+
+<pre><code>NSString *initString = [[NSString alloc] initWithFormat:@"appid=%@,timeout=%@",APPID,TIMEOUT];  
+_iFlySpeechRecognizer = [IFlySpeechRecognizer createRecognizer: initString delegate:self];  
+[initString release];  
+</code></pre>
+
+
+<p>
+params 的参数说明如下：</p>
+
+<ol>
+<li>appid(必选)：应用程序ID。 ID为您在语音云平台申请的appid。appid与iflyMSC.framework一一对应，不能混用</li>
+<li>timeout (可选)：网络超时时间,单位:ms，默认为20000，范围0-30000</li>
+<li>usr (可选)：用户名，开发者在开发者网站上注册的用户名</li>
+<li>pwd (可选)：用户密码，开发者在开发者网站上的用户密码</li>
+<li>server_url (可选)：默认连接语音云公网入口 <a href="http://dev.voicecloud.cn/index.htm">http://dev.voicecloud.cn/index.htm</a>，只有特定业务才需要设置为固定ip或域名,普通开发者不需要设置</li>
+<li>besturl_search (可选)：默认为1，如果server_url设置为固定ip地址，需要将此参数设置为0，表示不寻找最佳服务器。如果 server_url为域名，可以将此参数设置为1</li>
+</ol>
+
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">IFlySpeechRecognizer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getRecognizer" title="getRecognizer"></a>
+	<h3 class="subsubtitle method-title">getRecognizer</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>获取识别对象</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (IFlySpeechRecognizer *)getRecognizer</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>返回创建的识别对象</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">IFlySpeechRecognizer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/cancel" title="cancel"></a>
+	<h3 class="subsubtitle method-title">cancel</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>取消本次会话</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)cancel</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">IFlySpeechRecognizer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/recognizeAudio:" title="recognizeAudio:"></a>
+	<h3 class="subsubtitle method-title">recognizeAudio:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>音频文件识别</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)recognizeAudio:(NSData *)<em>audioData</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>audioData</em></dt>
+			<dd><p>音频数据</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">IFlySpeechRecognizer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/recognizeStream" title="recognizeStream"></a>
+	<h3 class="subsubtitle method-title">recognizeStream</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>音频流识别</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)recognizeStream</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">IFlySpeechRecognizer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setParameter:value:" title="setParameter:value:"></a>
+	<h3 class="subsubtitle method-title">setParameter:value:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>设置识别引擎的参数</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)setParameter:(NSString *)<em>key</em> value:(NSString *)<em>value</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>识别引擎参数</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>参数对应的取值</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>设置的参数和取值正确返回YES，失败返回NO</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>识别的引擎参数(key)取值如下：</p>
+
+<ol>
+<li>domain：应用的领域； 取值为iat、at、search、video、poi、music、asr；iat：普通文本转写； search：热词搜索； video：视频音乐搜索； asr：命令词识别;</li>
+<li>vad_bos：前端点检测；静音超时时间，即用户多长时间不说话则当做超时处理； 单位：ms； engine指定iat识别默认值为5000； 其他情况默认值为 4000，范围 0-10000。</li>
+<li>vad_eos：后断点检测；后端点静音检测时间，即用户停止说话多长时间内即认为不再输入， 自动停止录音；单位:ms，sms 识别默认值为 1800，其他默认值为 700，范围 0-10000。</li>
+<li>sample_rate：采样率，目前支持的采样率设置有 16000 和 8000。</li>
+<li>asr_ptt：否返回无标点符号文本； 默认为 1，当设置为 0 时，将返回无标点符号文本。</li>
+<li>asr_sch：是否需要进行语义处理，默认为 0，即不进行语义识别，对于需要使用语义的应用，需要将 asr_sch 设为 1，并且设置 plain_result 参数为 1，由外部对结果进行解析。</li>
+<li>plain_result：回结果是否在内部进行json解析，默认值为0，即进行解析，返回外部的内容为解析后文本。对于语义等业务，由于服务端返回内容为 xml 或其他格式，需要应用程序自行处理，这时候需要设置 plain_result 为1。</li>
+<li>grammarID：识别的语法 id，只针对 domain 设置为”asr”的应用。</li>
+<li>asr_audio_path：音频文件名；设置此参数后，将会自动保存识别的录音文件。路径为Documents/(指定值)。不设置或者设置为nil，则不保存音频。</li>
+<li>params：扩展参数，对于一些特殊的参数可在此设置，一般用于设置语义。</li>
+</ol>
+
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">IFlySpeechRecognizer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/startListening" title="startListening"></a>
+	<h3 class="subsubtitle method-title">startListening</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>开始识别</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)startListening</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>同时只能进行一路会话，这次会话没有结束不能进行下一路会话，否则会报错。若有需要多次回话，请在onError回调返回后请求下一路回话。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">IFlySpeechRecognizer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stopListening" title="stopListening"></a>
+	<h3 class="subsubtitle method-title">stopListening</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>停止录音</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)stopListening</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>调用此函数会停止录音，并开始进行语音识别</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">IFlySpeechRecognizer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/writeAudio:length:" title="writeAudio:length:"></a>
+	<h3 class="subsubtitle method-title">writeAudio:length:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>写入音频流</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)writeAudio:(NSData *)<em>audioData</em> length:(int)<em>length</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>audioData</em></dt>
+			<dd><p>音频数据</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>length</em></dt>
+			<dd><p>长度</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>写入成功返回YES，写入失败返回NO</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">IFlySpeechRecognizer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2015 cmcc. All rights reserved. (Last updated: 2015-06-25)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

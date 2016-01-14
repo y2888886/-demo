@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/IFlyDataUploaderDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/IFlyDataUploaderDelegate</TokenIdentifier>
+			<Abstract type="html">  上传数据委托 </Abstract>
+			<DeclaredIn>IFlyDataUploader.h</DeclaredIn>
+			
+			<NodeRef refid="13"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IFlyDataUploaderDelegate/onEnd:grammerID:error:</TokenIdentifier>
+			<Abstract type="html">上传结束回调</Abstract>
+			<DeclaredIn>IFlyDataUploader.h</DeclaredIn>			
+			
+			<Declaration>- (void)onEnd:(IFlyDataUploader *)uploader grammerID:(NSString *)grammerID error:(IFlySpeechError *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>uploader</Name>
+					<Abstract type="html">-[out] IFlyDataUploader对象，你可以在此释放这个对象</Abstract>
+				</Parameter><Parameter>
+					<Name>grammerID</Name>
+					<Abstract type="html">-[out] 返回上传的语法id</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">-[out] 错误对象</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onEnd:grammerID:error:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+	</File>
+</Tokens>

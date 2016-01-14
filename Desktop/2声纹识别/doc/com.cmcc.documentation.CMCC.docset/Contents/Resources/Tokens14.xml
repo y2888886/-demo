@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/IFlyISVDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/IFlyISVDelegate</TokenIdentifier>
+			<Abstract type="html">IFlyISVDelegate</Abstract>
+			<DeclaredIn>IFlyISVDelegate.h</DeclaredIn>
+			
+			<NodeRef refid="14"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IFlyISVDelegate/onResult:</TokenIdentifier>
+			<Abstract type="html">onResult
+dic:声纹结果</Abstract>
+			<DeclaredIn>IFlyISVDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)onResult:(NSDictionary *)dic</Declaration>
+			
+			
+			<Anchor>//api/name/onResult:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IFlyISVDelegate/onError:</TokenIdentifier>
+			<Abstract type="html">onError
+errorCode:错误信息
+_errorCode:错误码，0表示正常，非0表示错误
+_errorType:错误类型</Abstract>
+			<DeclaredIn>IFlyISVDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)onError:(IFlySpeechError *)errorCode</Declaration>
+			
+			
+			<Anchor>//api/name/onError:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IFlyISVDelegate/onRecognition</TokenIdentifier>
+			<Abstract type="html">onRecognition
+结束录音，正在识别中</Abstract>
+			<DeclaredIn>IFlyISVDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)onRecognition</Declaration>
+			
+			
+			<Anchor>//api/name/onRecognition</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IFlyISVDelegate/onVolumeChanged:</TokenIdentifier>
+			<Abstract type="html">onVolumeChanged
+录音音量：0-30</Abstract>
+			<DeclaredIn>IFlyISVDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)onVolumeChanged:(int)volume</Declaration>
+			
+			
+			<Anchor>//api/name/onVolumeChanged:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+	</File>
+</Tokens>
